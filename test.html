@@ -1,0 +1,754 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta content="width=device-width, initial-scale=1.0" name="viewport" />
+    <title>Job Portal</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+   
+    <link
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css"
+      rel="stylesheet"
+    />
+  <link
+  href="https://fonts.googleapis.com/css2?family=Figtree:wght@400;600;700&family=Ephesis&family=Inter&display=swap"
+  rel="stylesheet"
+/>
+    <script>
+      tailwind.config = {
+        theme: {
+          extend: {
+            colors: {
+              primary: '#309689',
+              secondary: '#fff',
+              tertiary : '#000',
+            }
+          }
+        }
+      }
+    </script>
+    <style>
+      .ScrollBar-Hide::-webkit-scrollbar{
+        display: none;
+      }
+    </style>
+  </head>
+  <body class="  font-[Figtree]">
+    <!-- Header -->
+    <section class="bg-[url(Main-hero.png)] ">
+    <header class="bg-tertiary/70 text-white shadow   py-4 md:py-6 lg:py-8">
+      <div
+        class="container mx-auto px-4 px-10  md:px-6 lg:px-8 flex justify-between items-center"
+      >
+        <div class="text-lg flex items-center gap-2 font-bold text-xl"><img src="Main Logo.png" alt="Logo"> <span>Jobs</span></div>
+        <nav class="space-x-4 md:space-x-6 sm:block hidden lg:space-x-8">
+          <a class="hover:text-gray-300" href="#"> Home </a>
+          <a class="hover:text-gray-300" href="#"> Jobs </a>
+          <a class="hover:text-gray-300" href="#"> About Us </a>
+          <a class="hover:text-gray-300" href="#"> Contact </a>
+        </nav>
+        <div class="space-x-4 md:space-x-6 lg:space-x-8 text-base">
+          <a class="hover:text-gray-300" href="#"> Login </a>
+          <a
+            class="bg-primary hover:bg-primary/90 text-white px-4 py-2 rounded"
+            href="#"
+          >
+            Register
+          </a>
+        </div>
+      </div>
+    </header>
+    <!-- Hero Section -->
+    <section class="bg-cover bg-center w-full text-center "
+     >
+      <div
+       class="w-full bg-black/50 backdrop-filter backdrop-blur-sm sm:h-screen  justify-around items-center flex flex-col   p-4 md:p-6 lg:p-8"
+        
+      >
+      <div>
+        <h1 class="text-4xl md:text-5xl mt-10  lg:text-6xl font-bold text-white">
+          Find Your Dream Job Today!
+        </h1>
+        <p class="text-lg md:text-xl lg:text-2xl text-gray-300">
+          Connecting Talent with Opportunity from Various Industries and Career
+          Sources
+        </p>
+      </div>
+        <form class="overflow-clip sm:my-0 my-10  flex sm:flex-row gap-5 flex-col mx-auto rounded-xl sm:w-fit w-4/5  sm:bg-none bg-white sm:p-0 p-5    ">
+          <div class="flex sm:flex-row sm:pl-7 sm:gap-2 gap-5 sm:p-3 flex-col">
+          <input
+            class="px-2  py-2  md:rounded-l-md outline-none border-b-2 sm:border-b-0   md:border-r-2 md:border-gray-100 border-gray-200  "
+            placeholder="Job Title or Keyword"
+            type="text"
+          />
+          <select class="pr-10 sm:pl-5 px-2   py-2  border-b-2 sm:border-b-0    md:border-gray-100 border-gray-200  ">
+            <option>Location</option>
+          </select>
+          <select class="sm:pl-5 px-2 py-2  border-b-2 sm:border-b-0  sm:border-l-2 sm:border-gray-200 border-gray-200">
+            <option>Job Category</option>
+          </select>
+        </div>
+          <button
+            class="
+            bg-primary text-lgmai text-white px-4 py-2 rounded-md sm:rounded-r-md"
+          >
+            <i class="fas fa-search text-sm mr-1"></i> Search Job
+          </button>
+        </form>
+
+<!-- our network  -->
+     <div class="mt-8   flex justify-between md:gap-10 gap-5 space-x-8 text-white">
+  <div class="flex items-center ">
+    <img src="Icons/jobs.png" alt="" class="mr-4 w-10 lg:w-12">
+    <div class="flex flex-col md:text-base text-xs items-start">
+      <span class="text-base  md:text-xl font-bold">
+        25,000
+      </span>
+      <p>Job </p>
+    </div>
+  </div>
+  <div class="flex items-center ">
+    <img src="Icons/candidate.png" alt="" class="mr-4 w-10 lg:w-12">
+   <div class="flex flex-col md:text-base text-xs items-start">
+    <span class="text-base  md:text-xl font-bold">
+        10,200
+      </span>
+      <p>Resumes</p>
+    </div>
+  </div>
+  <div class="flex items-center ">
+   <img src="Icons/company.png" alt="" class="mr-4 w-10 lg:w-12">
+   <div class="flex flex-col md:text-base text-xs items-start">
+      <span class="text-base  md:text-xl font-bold">
+        18,400
+      </span>
+      <p>Companies</p>
+    </div>
+  </div>
+</div>
+       
+        <div class="container mx-auto md:my-0 my-5 mt-14 px-4 md:px-6 lg:px-8 flex justify-between scale-120 space-x-8">
+  <img alt="Spotify logo"  src="Logos/spotify.png"  />
+  <img alt="Slack logo"  src="Logos/slack.png "  />
+  <img alt="Adobe logo"  src="Logos/Adobe.png "  />
+  <img alt="Asana logo"  src="Logos/asana.png  "  />
+  <img alt="Linear logo"  src="Logos/linear.png "  />
+</div>
+      
+      </div>
+    </section>
+  </section>
+    <!-- Partners Section -->
+
+    <!-- Recent Jobs Section -->
+    <section
+      class="container mx-auto px-4 md:px-6 lg:px-8 py-12 md:py-14 lg:py-16"
+    >
+      <div class="flex md:justify-between gap-10 justify-center md:flex-row flex-col  md:items-end items-center">
+        <h2 class="text-2xl text-center sm:text-start  md:text-3xl lg:text-5xl font-bold">
+          Recent Jobs Available
+        <br>
+          <span class="text-base font-medium "> Modi iusto enim ut incidunt velit, aliquid aperiam inventore quaerat impedit fugit non </span>
+        </h2>
+        <a class="text-primary mb-2 text-xl underline" href="#"> View all </a>
+      </div>
+      <div class="mt-10 space-y-4 md:px-0 px-5 md:space-y-6 lg:space-y-8">
+ <!-- Job Item -->
+        <div class="relative  mx-auto  p-10 lg:py-10 rounded shadow flex gap-5 flex-col md:flex-row justify-between md:items-end"
+>
+  <span class="bg-primary/10 text-primary rounded-lg absolute top-5 px-4 py-0  text-base">10 min</span>
+  <div>
+    <div class="flex flex-col md:items-center md:flex-row item-start gap-5 mb-2 mt-5 ">
+      <img class="w-10" src="Logos/Logo-1.png" alt=" Forward Security Director">
+      <div>
+        <h3 class="text-lg md:text-xl lg:text-2xl font-bold leading-none ">
+          Forward Security Director
+        </h3>
+        <p class="text-gray-700 font-normal  text-base ">Spotify, New York, USA</p>
+      </div>
+    </div>
+    <div class="my-5 sm:mb-0 flex item-center flex-col sm:flex-row text-base  gap-5 text-gray-600">
+      <span>
+        <i class="fas fa-briefcase text-primary  mr-1"> </i>
+        Hotel and Toursim
+      </span>
+
+      <span>
+        <i class="fas fa-clock text-primary mr-1"> </i>
+        Full Time
+      </span>
+      <span>
+        <i class="fas fa-wallet  text-primary mr-1"> </i>
+        $2000-$3000
+      </span>
+      <span>
+        <i class="fas fa-map-marker-alt text-primary mr-1"> </i>
+        New York, USA
+      </span>
+    </div>
+  </div>
+  <img src="Icons/Icon.svg" class="absolute right-7 md:scale-120 top-5" alt="Save Job">
+  <a
+    class="bg-primary text-center hover:bg-green-600 text-white px-4 py-2  sm:py-1 mb-1 rounded-lg"
+    href="#"
+  >
+   Job Details
+  </a>
+</div>
+
+<div class="relative  mx-auto  p-10 lg:py-10 rounded shadow flex gap-5 flex-col md:flex-row justify-between md:items-end"
+>
+<span class="bg-primary/10 text-primary rounded-lg absolute top-5 px-4 py-0  text-base">10 min</span>
+<div>
+  <div class="flex flex-col md:items-center md:flex-row item-start gap-5 mb-2 mt-5 ">
+    <img class="w-10" src="Logos/Logo-2.png" alt="Regional Creative Facilitator">
+    <div>
+      <h3 class="text-lg md:text-xl lg:text-2xl font-bold leading-none ">
+        Regional Creative Facilitator
+      </h3>
+      <p class="text-gray-700 font-normal  text-base ">Slack, London, UK</p>
+    </div>
+  </div>
+  <div class="my-5 md:mb-0 flex item-center flex-col sm:flex-row text-base  gap-5 text-gray-600">
+    <span>
+      <i class="fas fa-briefcase text-primary  mr-1"> </i>
+      IT and Software
+    </span>
+
+    <span>
+      <i class="fas fa-clock text-primary mr-1"> </i>
+      Part Time
+    </span>
+    <span>
+      <i class="fas fa-wallet  text-primary mr-1"> </i>
+      $1500-$2000
+    </span>
+    <span>
+      <i class="fas fa-map-marker-alt text-primary mr-1"> </i>
+      London, UK
+    </span>
+  </div>
+</div>
+<img src="Icons/Icon.svg" class="absolute right-7 md:scale-120 top-5" alt="Save Job">
+<a
+  class="bg-primary text-center hover:bg-green-600 text-white px-4 py-2  sm:py-1 mb-1 rounded-lg"
+  href="#"
+>
+ Job Details
+</a>
+</div>
+
+<div class="relative  mx-auto  p-10 lg:py-10 rounded shadow flex gap-5 flex-col md:flex-row justify-between md:items-end"
+>
+<span class="bg-primary/10 text-primary rounded-lg absolute top-5 px-4 py-0  text-base">10 min</span>
+<div>
+  <div class="flex flex-col md:items-center md:flex-row item-start gap-5 mb-2 mt-5 ">
+    <img class="w-10" src="Logos/Logo-3.png" alt="Internal Integration Planner">
+    <div>
+      <h3 class="text-lg md:text-xl lg:text-2xl font-bold leading-none ">
+        Internal Integration Planner
+      </h3>
+      <p class="text-gray-700 font-normal  text-base ">Adobe, San Francisco, USA</p>
+    </div>
+  </div>
+  <div class="my-5 md:mb-0 flex item-center flex-col sm:flex-row text-base  gap-5 text-gray-600">
+    <span>
+      <i class="fas fa-briefcase text-primary  mr-1"> </i>
+      Finance
+    </span>
+
+    <span>
+      <i class="fas fa-clock text-primary mr-1"> </i>
+      Contract
+    </span>
+    <span>
+      <i class="fas fa-wallet  text-primary mr-1"> </i>
+      $3000-$4000
+    </span>
+    <span>
+      <i class="fas fa-map-marker-alt text-primary mr-1"> </i>
+      San Francisco, USA
+    </span>
+  </div>
+</div>
+<img src="Icons/Icon.svg" class="absolute right-7 md:scale-120 top-5" alt="Save Job">
+<a
+  class="bg-primary text-center hover:bg-green-600 text-white px-4 py-2  sm:py-1 mb-1 rounded-lg"
+  href="#"
+>
+ Job Details
+</a>
+</div>
+
+<div class="relative  mx-auto  p-10 lg:py-10 rounded shadow flex gap-5 flex-col md:flex-row justify-between md:items-end"
+>
+<span class="bg-primary/10 text-primary rounded-lg absolute top-5 px-4 py-0  text-base">10 min</span>
+<div>
+  <div class="flex flex-col md:items-center md:flex-row item-start gap-5 mb-2 mt-5 ">
+    <img class="w-10" src="Logos/Logo-4.png" alt="District Intranet Director">
+    <div>
+      <h3 class="text-lg md:text-xl lg:text-2xl font-bold leading-none ">
+        District Intranet Director
+      </h3>
+      <p class="text-gray-700 font-normal  text-base ">Asana, Florida, USA</p>
+    </div>
+  </div>
+  <div class="my-5 md:mb-0 flex item-center flex-col sm:flex-row text-base  gap-5 text-gray-600">
+    <span>
+      <i class="fas fa-briefcase text-primary  mr-1"> </i>
+      Marketing
+    </span>
+
+    <span>
+      <i class="fas fa-clock text-primary mr-1"> </i>
+      Full Time
+    </span>
+    <span>
+      <i class="fas fa-wallet  text-primary mr-1"> </i>
+      $2500-$3500
+    </span>
+    <span>
+      <i class="fas fa-map-marker-alt text-primary mr-1"> </i>
+      Florida, USA
+    </span>
+  </div>
+</div>
+<img src="Icons/Icon.svg" class="absolute right-7 md:scale-120 top-5" alt="Save Job">
+<a
+  class="bg-primary text-center hover:bg-green-600 text-white px-4 py-2  sm:py-1 mb-1 rounded-lg"
+  href="#"
+>
+ Job Details
+</a>
+</div>
+
+<div class="relative  mx-auto  p-10 lg:py-10 rounded shadow flex gap-5 flex-col md:flex-row justify-between md:items-end"
+>
+<span class="bg-primary/10 text-primary rounded-lg absolute top-5 px-4 py-0  text-base">10 min</span>
+<div>
+  <div class="flex flex-col md:items-center md:flex-row item-start gap-5 mb-2 mt-5 ">
+    <img class="w-10" src="Logos/Logo-5.png" alt="Corporate Tactics Facilitator">
+    <div>
+      <h3 class="text-lg md:text-xl lg:text-2xl font-bold leading-none ">
+        Corporate Tactics Facilitator
+      </h3>
+      <p class="text-gray-700 font-normal  text-base ">Linear, Denver, USA</p>
+    </div>
+  </div>
+  <div class="my-5 md:mb-0 flex item-center flex-col sm:flex-row text-base  gap-5 text-gray-600">
+    <span>
+      <i class="fas fa-briefcase text-primary  mr-1"> </i>
+      Human Resources
+    </span>
+
+    <span>
+      <i class="fas fa-clock text-primary mr-1"> </i>
+      Part Time
+    </span>
+    <span>
+      <i class="fas fa-wallet  text-primary mr-1"> </i>
+      $2000-$3000
+    </span>
+    <span>
+      <i class="fas fa-map-marker-alt text-primary mr-1"> </i>
+      Denver, USA
+    </span>
+  </div>
+</div>
+<img src="Icons/Icon.svg" class="absolute right-7 md:scale-120 top-5" alt="Save Job">
+<a
+  class="bg-primary text-center hover:bg-green-600 text-white px-4 py-2  sm:py-1 mb-1 rounded-lg"
+  href="#"
+>
+ Job Details
+</a>
+</div>
+
+
+
+
+
+      </div>
+    </section>
+    <!-- Browse by Category Section -->
+    <section class="bg-primary/10 py-12 md:py-14 lg:py-16">
+      <div class="container mx-auto px-4 md:px-6 lg:px-8">
+        <h2 class="text-2xl md:text-3xl lg:text-4xl font-bold text-center">
+          Browse by Category
+        </h2>
+        <div
+          class="mt-8 grid grid-cols-1  px-10 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-4"
+        >
+<!--Category -1  -->
+          <div class="bg-white  w-2xs flex py-12 flex-col items-center gap-5  rounded-2xl shadow text-center">
+            <img src="Icons/agriculture.png" alt="">
+            <h3 class="text-lg md:text-xl lg:text-2xl font-bold">
+              Agriculture
+            </h3>
+            <p class="text-primary bg-primary/10 px-2 rounded-lg mt-2">120 Jobs</p>
+          </div>
+          <!--Category -2  -->
+          <div class="bg-white  w-2xs flex py-12 flex-col items-center gap-5  rounded-2xl shadow text-center">
+            <img src="Icons/metal-production.png" alt="">
+            <h3 class="text-lg md:text-xl lg:text-2xl font-bold">
+              Metal Production
+            </h3>
+            <p class="text-primary bg-primary/10 px-2 rounded-lg mt-2">70 Jobs</p>
+          </div>
+           <!--Category -3  -->
+           <div class="bg-white  w-2xs flex py-12 flex-col items-center gap-5  rounded-2xl shadow text-center">
+            <img src="Icons/commerce.png" alt="">
+            <h3 class="text-lg md:text-xl lg:text-2xl font-bold">
+              Commerce
+            </h3>
+            <p class="text-primary bg-primary/10 px-2 rounded-lg mt-2">150 Jobs</p>
+          </div>
+        
+           <!--Category -4  -->
+           <div class="bg-white  w-2xs flex py-12 flex-col items-center gap-5  rounded-2xl shadow text-center">
+            <img src="Icons/construction.png" alt="">
+            <h3 class="text-lg md:text-xl lg:text-2xl font-bold">
+              Construction
+            </h3>
+            <p class="text-primary bg-primary/10 px-2 rounded-lg mt-2">80 Jobs</p>
+          </div>
+          
+          <!--Category -5  -->
+          <div class="bg-white  w-2xs flex py-12 flex-col items-center gap-5  rounded-2xl shadow text-center">
+            <img src="Icons/hotel&torisum.png" alt="">
+            <h3 class="text-lg md:text-xl lg:text-2xl font-bold">
+              Hotels & Tourism
+            </h3>
+            <p class="text-primary bg-primary/10 px-2 rounded-lg mt-2">90 Jobs</p>
+          </div>
+         
+            <!--Category -6  -->
+            <div class="bg-white  w-2xs flex py-12 flex-col items-center gap-5  rounded-2xl shadow text-center">
+              <img src="Icons/education.png" alt="">
+              <h3 class="text-lg md:text-xl lg:text-2xl font-bold">
+                Education
+              </h3>
+              <p class="text-primary bg-primary/10 px-2 rounded-lg mt-2">110 Jobs</p>
+            </div>
+ <!--Category -7  -->
+ <div class="bg-white  w-2xs flex py-12 flex-col items-center gap-5  rounded-2xl shadow text-center">
+  <img src="Icons/finance.png" alt="">
+  <h3 class="text-lg md:text-xl lg:text-2xl font-bold">
+    Financial Services
+  </h3>
+  <p class="text-primary bg-primary/10 px-2 rounded-lg mt-2">130 Jobs</p>
+</div>
+
+         
+       
+          <!--Category -8  -->
+          <div class="bg-white  w-2xs flex py-12 flex-col items-center gap-5  rounded-2xl shadow text-center">
+            <img src="Icons/trasnport.png" alt="">
+            <h3 class="text-lg md:text-xl lg:text-2xl font-bold">
+              Transport
+            </h3>
+            <p class="text-primary bg-primary/10 px-2 rounded-lg mt-2">60 Jobs</p>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- Good Life Section -->
+    <section
+      class="container mx-auto px-4 md:px-6 lg:px-8 py-12 md:py-14 lg:py-16"
+    >
+      <div class="grid grid-cols-1 items-center md:grid-cols-2 gap-10">
+        <div>
+          <img
+            alt="Good Life Image"
+            class="rounded-xl aspect-2/1 w-4/5 mx-auto shadow p-1 blur-[1px] "
+            
+            src="https://storage.googleapis.com/a1aa/image/ZFliHwCbLRyQL6baU9GsDNe_HKRo0vcTznET34NzCQ4.jpg"
+            
+          />
+        </div>
+        <div class="w-4/5 mx-auto">
+          <h2 class="text-2xl md:text-3xl lg:text-4xl font-bold">
+            Good Life Begins With A Good Company
+          </h2>
+          <p class="text-gray-500 mt-4">
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut
+            ultricies, purus eget bibendum tincidunt, urna ligula cursus eros,
+            nec tincidunt nunc lorem eget velit.
+          </p>
+         
+          <div class="mt-8 flex space-x-4">
+            <a
+              class="bg-primary hover:bg-green-600 text-white px-4 py-2 rounded-lg"
+              href="#"
+            >
+              Search Jobs
+            </a>
+            <a
+              class=" hover:bg-gray-100 underline text-base text-primary px-4 py-2 rounded-lg"
+              href="#"
+            >
+              Learn More
+            </a>
+          </div>
+        </div>
+      </div>
+      <!--  -->
+    <div class="mt-10 flex gap-20 sm:flex-row flex-col justify-between  text-center sm:w-auto w-4/5 mx-auto">
+  <div>
+    <span class=" text-primary text-3xl lg:text-4xl font-bold">
+      12k+
+    </span>
+    <p class="text-gray-800 font-semibold text-2xl">Clients </p>
+    <span  class="text-sm">Lorem ipsum dolor sit amet consectetur adipisicing elit. Fugiat, nisi nobis maiores tenetur cumque consectetur.</span>
+  </div>
+  <div>
+    <span class=" text-primary text-3xl lg:text-4xl font-bold">
+      20k+
+    </span>
+    <p class="text-gray-800 font-semibold text-2xl">Active resume </p>
+    <span  class="text-sm">Lorem ipsum dolor sit amet consectetur adipisicing elit. Fugiat, nisi nobis maiores tenetur cumque consectetur.</span>
+  </div>
+  <div>
+    <span class=" text-primary text-3xl lg:text-4xl font-bold">
+      18k+
+    </span>
+    <p class="text-gray-800  font-semibold text-2xl">Companies </p>
+    <span  class="text-sm">Lorem ipsum dolor sit amet consectetur adipisicing elit. Fugiat, nisi nobis maiores tenetur cumque consectetur.</span>
+  </div>
+</div>
+      <!--  -->
+    </section>
+    <!-- Create a Better Future Section -->
+    <section
+      class="bg-cover bg-top px-14   py-20 md:py-24 lg:pb-28 lg:pt-10 "
+      >
+      <div class="container relative  rounded-lg overflow-clip bg-black/90   mx-auto bg-cover bg-top"
+     
+      >
+      <div class="w-4/5 aspect-[3/2] sm:hidden" ></div>
+      <div class="absolute md:bottom-5 bottom-3/4 right-0 md:-translate-x-1/2 translate-y-1/3 md:-translate-y-16" >
+      <img class="lg:scale-[200%] " src="Students.png" alt="">
+    </div>
+      <div class="backdrop-blur-sm lg:py-10">
+      <div class="md:w-2/5   m-5">
+        <h2 class="text-3xl text-center md:text-start md:text-4xl lg:text-5xl font-bold text-white">
+          Create A Better Future For Yourself
+        </h2>
+        <p class="text-base text-center md:text-start md:text-xl lg:text-2xl text-gray-300 mt-4">
+          Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut ultricies,
+          purus eget bibendum tincidunt, urna ligula cursus eros, nec tincidunt
+          nunc lorem eget velit.
+        </p>
+        <a
+          class="bg-primary text-center hover:bg-green-600 w-full md:mb-0 mb-5 sm:w-fit  text-white px-4 py-2 rounded mt-8 inline-block"
+          href="#"
+        >
+         Search Job
+        </a>
+      </div>
+      </div>
+    </div>
+    </section>
+    <!-- Testimonials Section -->
+    <section class="bg-primary/10 py-12 md:py-14 lg:py-16">
+      <div class="container mx-auto px-4 md:px-6 lg:px-8">
+        <h2 class="text-2xl md:text-3xl lg:text-4xl font-bold text-center">
+          Testimonials from Our Customers
+        </h2>
+
+        <div class="mt-8 ScrollBar-Hide flex overflow-x-auto px-10 gap-10">
+          <!-- Card 1 -->
+          <div class="bg-white flex-shrink-0 w-[350px] relative p-4 md:p-6 lg:p-8 rounded-lg shadow text-start">
+            <span class="text-amber-500 pl-2">
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star"></i>
+            </span>
+            <p class="text-gray-900 font-bold text-2xl mt-1">Excellent Experience</p>
+            <p class="text-black text-base italic mt-4">
+              Metus faucibus sed turpis lectus feugiat tincidunt. Rhoncus sed tristique in dolor. Mus etiam et vestibulum venenatis.
+            </p>
+            <span class="absolute font-[Ephesis] right-10 bottom-12 text-7xl text-primary">&rdquo;</span>
+            <div class="flex gap-2 mt-10 items-center">
+              <img class="rounded-full w-14 object-cover" src="https://randomuser.me/api/portraits/men/76.jpg" alt="">
+              <div>
+                <p>- Michael Brown</p>
+                <p class="text-gray-500">Happy Client</p>
+              </div>
+            </div>
+          </div>
+        
+          <!-- Card 2 -->
+          <div class="bg-white flex-shrink-0 w-[350px] relative p-4 md:p-6 lg:p-8 rounded-lg shadow text-start">
+            <span class="text-amber-500 pl-2">
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star"></i>
+            </span>
+            <p class="text-gray-900 font-bold text-2xl mt-1">Great Services</p>
+            <p class="text-black text-base italic mt-4">
+              Mauris facilisis non urna sit amet. Varius etiam pulvinar pretium tristique adipiscing nisl.
+            </p>
+            <span class="absolute font-[Ephesis] right-10 bottom-12 text-7xl text-primary">&rdquo;</span>
+            <div class="flex gap-2 mt-10 items-center">
+              <img class="rounded-full w-14 object-cover" src="https://randomuser.me/api/portraits/men/77.jpg" alt="">
+              <div>
+                <p>- David Lee</p>
+                <p class="text-gray-500">Happy Client</p>
+              </div>
+            </div>
+          </div>
+        
+          <!-- Card 3 -->
+          <div class="bg-white flex-shrink-0 w-[350px] relative p-4 md:p-6 lg:p-8 rounded-lg shadow text-start">
+            <span class="text-amber-500 pl-2">
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star"></i>
+            </span>
+            <p class="text-gray-900 font-bold text-2xl mt-1">Best Experience</p>
+            <p class="text-black text-base italic mt-4">
+              Praesent vulputate ante eu augue consequat venenatis. Nulla vel hendrerit velit nunc.
+            </p>
+            <span class="absolute font-[Ephesis] right-10 bottom-12 text-7xl text-primary">&rdquo;</span>
+            <div class="flex gap-2 mt-10 items-center">
+              <img class="rounded-full w-14 object-cover" src="https://randomuser.me/api/portraits/men/78.jpg" alt="">
+              <div>
+                <p>- James Davis</p>
+                <p class="text-gray-500">Happy Client</p>
+              </div>
+            </div>
+          </div>
+        </div>
+        
+      </div>
+    </section>
+    <!-- News and Blog Section -->
+    <section
+      class="container mx-auto px-4 md:px-6 lg:px-8 py-12 md:py-14 lg:py-16"
+    >
+      <div class="flex justify-between gap-4 text-center md:flex-row flex-col items-center">
+        <div >
+        <h2 class="text-2xl md:text-3xl lg:text-4xl font-bold md:mb-1 mb-2">
+          News and Blog
+        </h2>
+      <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Rem, velit.</p>
+      </div>
+        <a class="text-primary text-xl underline" href="#"> View all </a>
+      </div>
+      <div class="mt-8 flex gap-5 overflow-x-auto ScrollBar-Hide ">
+      <div class="bg-white w-[400px] md:w-1/2 flex-shrink-0 relative p-4 md:p-6 lg:p-8 rounded shadow">
+  <img
+    alt="News Image"
+    class="rounded  aspect-[5/3] w-100 object-fill overflow-clip"
+    src="https://storage.googleapis.com/a1aa/image/k4LSfjKwIWu0t_OOQwmIJSyLSWijrdHZoeOKEDzQZeY.jpg"
+  />
+  <span class="text-white rounded-lg absolute top-12 bg-primary px-2 left-10"> News </span>
+  <div class="mt-4">
+    <p class="text-gray-500 mt-2">30 March 2023</p>
+    <h3 class="text-lg md:text-xl lg:text-2xl font-bold my-2 mb-5">
+      Revitalizing Workplace Morale: Innovative Tactics for Boosting
+      Employee Engagement in 2024
+    </h3>
+  <a class="text-primary text-xl font-semibold  " href="#">Read More <i class="ml-2 fas fa-arrow-right"></i>
+  </div>
+</div>
+
+<div class="bg-white relative w-[400px] md:w-1/2 flex-shrink-0 p-4 md:p-6 lg:p-8 rounded shadow">
+  <img
+    alt="News Image"
+    class="rounded  aspect-[5/3] w-100 object-fill overflow-clip"
+    src="https://storage.googleapis.com/a1aa/image/k4LSfjKwIWu0t_OOQwmIJSyLSWijrdHZoeOKEDzQZeY.jpg"
+  />
+  <span class="text-white rounded-lg absolute top-12 bg-primary px-2 left-10">
+     Blog </span>
+  <div class="mt-4">
+    <p class="text-gray-500 mt-2">30 March 2023</p>
+    <h3 class="text-lg md:text-xl lg:text-2xl text-black font-bold my-2 mb-5">
+      How to avoid the top six most common job interview mistakes
+    </h3>
+  <a class="text-primary text-xl font-semibold  " href="#">Read More <i class="ml-2 fas fa-arrow-right"></i>
+  </div>
+</div>
+        
+      </div>
+    </section>
+    <!-- Footer -->
+    <footer class="bg-gray-900 font-[Inter] text-white py-12 md:py-14 lg:py-16">
+    <div class="container mx-auto px-4 text-base md:px-6 lg:px-8 flex md:flex-row flex-col text-center md:text-start justify-between md:gap-5 gap-10  ">
+  <div class="md:w-4/5 text-white px-2">
+    <h3 class="text-xl md:text-xl lg:text-xl flex items-center gap-2 justify-center font-semibold"><img class="w-7 mb-1" src="Main Logo.png" alt=""> <span>Job</span></h3>
+    <p class="text-gray-300 text-lg mt-4">
+      Quis enim pellentesque viverra tellus eget malesuada facilisis. Congue nibh vivamus aliquet nunc mauris dm
+    </p>
+  </div>
+  <div class="md:w-1/3 md:-ml-10 ">
+  <h3 class="text-lg md:text-xl text-white lg:text-xl font-bold">Company</h3>
+  <ul class="mt-4 space-y-1">
+    <li>
+      <a class="hover:underline" href="#">About Us</a>
+    </li>
+    <li>
+      <a class="hover:underline" href="#">Our Team</a>
+    </li>
+    <li>
+      <a class="hover:underline" href="#">Partners</a>
+    </li>
+    <li>
+      <a class="hover:underline" href="#">For Candidates </a>
+    </li>
+    <li>
+      <a class="hover:underline" href="#">For Employers</a>
+    </li>
+  </ul>
+</div>
+
+
+  <div class="md:w-1/3 ">
+    <h3 class="text-lg md:text-xl lg:text-xl font-bold">Job Categories</h3>
+    <ul class="mt-4 space-y-1">
+      <li>
+        <a class="hover:underline" href="#">Telecomunications</a>
+      </li>
+      <li>
+        <a class="hover:underline" href="#">Hotels & Tourism</a>
+      </li>
+      <li>
+        <a class="hover:underline" href="#">Construction</a>
+      </li>
+      <li>
+        <a class="hover:underline" href="#">Education</a>
+      </li>
+      <li>
+        <a class="hover:underline" href="#">Financial Services</a>
+      </li>
+    </ul>
+    
+  </div>
+
+  <div class="md:w-2/3 px-5 md:ml-10 mx-auto">
+    <h3 class="text-lg md:text-xl lg:text-xl  font-bold">Newsletter</h3>
+    <p class="text-gray-500 mt-4">
+      Eu nunc pretium vitae platea, Non netus elementum vulputate
+    </p>
+   <form action="#">
+    <input type="email" placeholder="Email Address" class="px-2 mt-4 py-2 bg-black rounded-md outline-none md:border w-4/5  border-gray-100">
+    <button class="bg-primary w-4/5 mt-4 hover:bg-green-600 text-white px-4 py-2 rounded-md">Subscribe now</button>
+  </form>
+  </div>
+</div>
+</div>
+
+
+    </footer>
+
+
+    <h1 class="bg-black font-[Inter] text-primary/80 font-semibold pl-16 pb-2"> © Copyright Job Portal  2024. Designed by <i>Amit Vishwakarma</i></h1>
+  </body>
+</html>
